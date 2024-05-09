@@ -32,7 +32,7 @@
         "csharp": {
             "packageReferences": {
                 "Pulumi": "3.*",
-                "Pulumi.Aws": "5.*"
+                "Pulumi.Aws": "6.*"
             },
             "respectSchemaVersion": true
         },
@@ -43,7 +43,7 @@
         },
         "nodejs": {
             "dependencies": {
-                "@pulumi/aws": "^5.0.0"
+                "@pulumi/aws": "^6.0.0"
             },
             "devDependencies": {
                 "typescript": "^4.6.3"
@@ -53,7 +53,7 @@
         "python": {
             "requires": {
                 "pulumi": ">=3.0.0,<4.0.0",
-                "pulumi-aws": ">=5.0.0,<6.0.0"
+                "pulumi-aws": ">=6.0.0,<7.0.0"
             },
             "respectSchemaVersion": true
         }
