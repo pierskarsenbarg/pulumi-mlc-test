@@ -33,10 +33,11 @@ install_provider:: PKG_ARGS := --no-bytecode --public-packages "*" --public
 install_provider:: build_provider
 	rm -rf ./bin && \
 	cd provider/cmd/${PROVIDER}/ && \
-	cp -r ./bin ../../../bin
-	cd ./bin && \
-	yarn install
-	chmod +x bin/${PROVIDER}
+	yarn run pkg . ${PKG_ARGS} --target node20 --output ../../../bin/${PROVIDER}
+# cp -r ./bin ../../../bin
+# cd ./bin && \
+# yarn install
+# chmod +x bin/${PROVIDER}
 		
 		
 # yarn run pkg . ${PKG_ARGS} --target node16 --output ../../../bin/${PROVIDER}

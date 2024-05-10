@@ -2,12 +2,14 @@
     "version": "${VERSION}",
     "bin": "bin/index.js",
     "dependencies": {
-        "@pulumi/pulumi": "^3.107.0",
-        "@pulumi/aws": "6.32.0"
+        "@pulumi/aws": "6.32.0",
+        "@pulumi/pulumi": "^3.107.0"
     },
     "devDependencies": {
         "@types/node": "18.19.33",
-        "pkg": "5.8.1",
-        "typescript": "5.4.5"
+        "typescript": "5.4.5",
+        "webpack": "^5.91.0",
+        "webpack-cli": "^5.1.4",
+        "@yao-pkg/pkg": "^5.11.5"
     }
 }
